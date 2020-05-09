@@ -1,7 +1,10 @@
 import React from "react";
 import classes from "./Quiz.module.css";
+
 import ActiveQuiz from "../../components/ActiveQuiz/ActiveQuiz";
 import FinishedQuiz from "../../components/FinishedQuiz/FinishedQuiz";
+
+
 class Quiz extends React.Component {
   state = {
     results: {}, // { [id]: 'success' 'error' }
@@ -89,6 +92,10 @@ class Quiz extends React.Component {
       answerState: null,
     });
   };
+
+  componentDidMount = () => {
+    console.log('Quiz ID: ', this.props.match.params.id)
+  }
 
   render() {
     return (
