@@ -1,13 +1,12 @@
-import React from "react";
-import Layout from "./hoc/Layout/Layout";
-import { Route, Switch } from "react-router-dom";
+import React, {Component} from 'react'
+import Layout from './hoc/Layout/Layout'
+import {Route, Switch} from 'react-router-dom'
+import Quiz from './containers/Quiz/Quiz'
+import QuizList from './containers/QuizList/QuizList'
+import Auth from './containers/Auth/Auth'
+import QuizCreator from './containers/QuizCreator/QuizCreator'
 
-import Quiz from "./containers/Quiz/Quiz.js";
-import QuizList from "./containers/QuizList/QuizList.js";
-import Auth from "./containers/Auth/Auth.js";
-import QuizCreator from "./containers/QuizCreator/QuizCreator.js";
-
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <Layout>
@@ -18,8 +17,8 @@ class App extends React.Component {
           <Route path="/" component={QuizList} />
         </Switch>
       </Layout>
-    );
+    )
   }
 }
 
-export default App;
+export default App

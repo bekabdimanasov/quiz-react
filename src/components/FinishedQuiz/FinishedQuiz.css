@@ -1,6 +1,6 @@
 .FinishedQuiz {
     padding: 20px;
-    color: white;
+    color: #fff;
     border: 2px solid #fff;
     border-radius: 5px;
     box-sizing: border-box;
@@ -22,5 +22,5 @@
 }
 
 .error {
-    color: rgba(240, 87, 107, .7);
+    color: rgba(240, 87, 108, .7);
 }
