@@ -94,8 +94,7 @@ class Quiz extends Component {
           {
             this.state.loading
              ? <Loader />
-             : 
-             (this.state.isFinished
+             : this.state.isFinished
               ? <FinishedQuiz
                 results={this.state.results}
                 quiz={this.state.quiz}
@@ -108,7 +107,7 @@ class Quiz extends Component {
                 quizLength={this.state.quiz.length}
                 answerNumber={this.state.activeQuestion + 1}
                 state={this.state.answerState}
-              />)
+              />
 
           }
         </div>
