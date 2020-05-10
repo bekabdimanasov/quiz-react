@@ -3,7 +3,7 @@ import classes from "./Loader.css";
 
 const Loader = (props) => (
   <div className={classes.center}>
-    <div class={classes.Loader}>
+    <div className={classes.Loader}>
       <div />
       <div />
       <div />
